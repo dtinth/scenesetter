@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head><title>Scene Setter</title>
+<style>
+body {
+	text-align: center;
+}
+.layers {
+	width: 600px;
+	margin: 0 auto;
+	background: #eee;
+	border: 1px solid #ccc;
+	position: relative;
+	-moz-transition: 0.3s height;
+	text-align: left;
+}
+.layer {
+	position: absolute;
+	left: 3px;
+	right: 3px;
+	background: #fff;
+	border: 1px solid #bbb;
+	padding: 0 1px;
+	font: 10pt/27px Verdana, sans-serif;
+	border-radius: 3px;
+	height: 31px;
+	-moz-box-sizing: border-box;
+	-moz-transition: 0.3s top;
+}
+.button {
+	-moz-box-sizing: border-box;
+	display: inline-block;
+	margin: 0 1px;
+	background: #f1f1f1;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 0 5px;
+	height: 25px;
+	font: 10pt/21px Verdana, sans-serif;
+	cursor: pointer;
+}
+.button-move {
+	cursor: move;
+}
+.toolbar {
+	margin-top: 3px
+}
+.button:hover {
+	background: #f8f8f8;
+	border-color: #999;
+}
+.layer-name {
+	padding-left: 1ex;
+}
+.dialog {
+	position: absolute;
+	text-align: left;
+	padding: 2px;
+	border: 1px solid #888;
+	border-radius: 3px;
+	background: #eee;
+}
+.dialog-title {
+	background: #888;
+	border-radius: 2px;
+	color: #fff;
+	padding: 3px 5px;
+	font: 10pt Helvetica, Arial, sans-serif;
+	cursor: move;
+}
+.dialog-close {
+	font-weight: bold;
+	cursor: pointer;
+}
+.textdialog-ta {
+	display: block;
+	width: 20em;
+	height: 10em;
+}
+</style>
+</head>
+
+<script src="frameworks/jquery-1.4.4.min.js"></script>
+<script src="frameworks/coffee-script.js"></script>
+<script type="text/coffeescript" src="scenesetter.coffee"></script>
+
+
+
