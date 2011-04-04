@@ -40,9 +40,9 @@ Now let's look at the toolbar at the bottom, you will see:
 * __height__: Change canvas height.
 * __new-background__: Add a new background layer.
 * __new-shadow__: Add an inner shadow to the image.
-* __new-frame: Add a rounded frame layer to the image (like shadow layer but with rounded borders).
-* __new-script__: Add a custom rendering script. When you click this button a popup dialog will open up to allow you to write __custom CoffeeScript code__
-to draw to the canvas.
+* __new-frame__: Add a rounded frame layer to the image (like shadow layer but with rounded borders).
+* __new-script__: Add a custom rendering script. When you click this button a popup dialog will open up to allow you to
+write __custom CoffeeScript code__ to draw to the canvas.
 
 
 Variables in Custom Script Layer
