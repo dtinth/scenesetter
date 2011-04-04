@@ -51,10 +51,24 @@ Variables in Custom Script Layer
 * __w__: Width
 * __h__: Height
 * __ctx__: Context
-* __canvas: Canvas Element
+* __canvas__: Canvas Element
 
 
+Example CoffeeScript Code
+-------------------------
 
+### Fade bottom out
+
+	ctx.globalCompositeOperation = 'destination-in'
+
+	r = 100
+	grad = ctx.createLinearGradient 0, h - r, 0, h
+
+	grad.addColorStop 0, 'rgba(0,0,0,1)'
+	grad.addColorStop 1, 'rgba(0,0,0,0)'
+
+	ctx.fillStyle = grad
+	ctx.fillRect 0, 0, w, h
 
 
 
