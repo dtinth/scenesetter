@@ -403,6 +403,7 @@ class Palette extends Bar
 			@canvas.fire 'update'
 		@addButton('new-background').click => new BackgroundLayer '#151413'
 		@addButton('new-shadow').click => new ShadowLayer '#090807'
+		@addButton('new-frame').click => new RoundedFrameLayer 'rgba(9, 8, 7, 0.6)'
 		@addButton('new-script').click => new CoffeeScriptLayer ''
 		@dropHold()
 	
