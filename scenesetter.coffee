@@ -424,9 +424,14 @@ class Palette extends Bar
 			dt = e.dataTransfer
 			files = dt.files
 			for file in files
-				image = new Image()
-				image.src = file.getAsDataURL()
-				new ImageLayer image, file.name
+				do ->
+					image = new Image()
+					f = file
+					r = new FileReader()
+					r.onload = (evt) ->
+						image.src = evt.target.result
+						new ImageLayer image, file.name
+					r.readAsDataURL(f)
 		drop = document.body
 		drop.addEventListener 'dragenter', ondragenter, false
 		drop.addEventListener 'dragleave', ondragleave, false
